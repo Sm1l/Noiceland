@@ -1,0 +1,225 @@
+.footer {
+  &__container {
+    background-color: #141414;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+  }
+
+  &__center {
+  }
+
+  &__bottom {
+  }
+
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__title {
+    @extend %title;
+    padding-bottom: 20px;
+  }
+}
+
+.top-footer {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  padding: 0px 0px 60px 0px;
+  border-bottom: 1px solid $color-grey;
+
+  &__logo {
+    display: block;
+    width: 135px;
+    height: 17px;
+    background: url(/src/img/footer/footerLogo.svg) no-repeat;
+  }
+
+  &__text {
+    color: $color-grey;
+    @include font("Libre Franklin", 400, 10px, $color-light-grey);
+  }
+}
+
+.center-footer {
+  display: flex;
+  gap: 10px;
+  padding: 60px 0px;
+
+  &__categories {
+    flex: 1 75%;
+  }
+
+  &__subscribe {
+    flex: 1 25%;
+  }
+}
+
+.footer-categories {
+  &__title {
+  }
+
+  &__navigation {
+  }
+
+  &__list {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 23%;
+  }
+
+  &__link {
+    color: $color-white;
+    transition: all 300ms ease-out;
+    &:hover {
+      color: $color-light-grey;
+      transition: all 300ms ease-out;
+    }
+  }
+}
+
+.footer-subscribe {
+  &__title {
+  }
+
+  &__form {
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__input {
+    height: 54px;
+    padding: 0px 20px;
+    @extend %title;
+  }
+
+  &__button {
+    color: $color-white;
+    background-color: $color-black;
+    border: none;
+    &:hover {
+      color: $color-black;
+      background-color: $color-white;
+    }
+  }
+}
+
+.bottom-footer {
+  display: flex;
+  gap: 30px;
+
+  &__information {
+    flex: 0 1 15%;
+  }
+
+  &__title {
+  }
+
+  &__navigation {
+  }
+
+  &__list {
+    flex-direction: column;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $color-white;
+    transition: all 300ms ease-out;
+    &:hover {
+      transition: all 300ms ease-out;
+      color: $color-light-grey;
+    }
+  }
+
+  &__followus {
+    flex: 0 1 15%;
+  }
+
+  &__template {
+    flex: 0 1 15%;
+  }
+}
+@media (max-width: 992px) {
+  .center-footer {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    &__label {
+      display: flex;
+    }
+    &__input {
+      display: block;
+      width: 100%;
+    }
+  }
+  .bottom-footer {
+    &__information {
+      flex: 1;
+    }
+    &__template {
+      flex: 1;
+    }
+    &__followus {
+      flex: 1;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .top-footer {
+    padding: 0px 0px 40px 0px;
+  }
+  .center-footer {
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 640px) {
+  .top-footer {
+    padding: 0px 0px 20px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .center-footer {
+    padding: 20px 0px;
+  }
+  .footer-categories {
+    &__item {
+      flex: 1 48%;
+    }
+  }
+
+  .bottom-footer {
+    flex-direction: column;
+    // align-items: center;
+    gap: 20px;
+
+    &__navigation {
+      // display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      color: #e18989;
+    }
+  }
+}

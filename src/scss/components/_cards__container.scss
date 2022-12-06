@@ -1,0 +1,36 @@
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &_small > .card {
+    flex: 1 25%;
+  }
+
+  &_medium > .card {
+    flex: 1 33.333%;
+  }
+
+  &_large > .card {
+    flex: 1 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards__container {
+    &_small > .card {
+      flex: 1 33.333%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cards__container > .card {
+    flex: 1 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards__container > .card {
+    flex: 1 100%;
+  }
+}

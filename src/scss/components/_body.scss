@@ -1,0 +1,17 @@
+._body {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 60px 10px;
+  border-bottom: 1px solid $color-light-grey;
+}
+@media (max-width: 768px) {
+  ._body {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  ._body {
+    padding: 20px 10px;
+  }
+}

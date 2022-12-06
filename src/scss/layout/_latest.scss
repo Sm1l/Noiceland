@@ -1,0 +1,23 @@
+.latest {
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    @include font("Libre Franklin", 400, 10px, $color-light-grey);
+  }
+
+  &__cards-container {
+  }
+
+  &__card {
+  }
+
+  &__button {
+  }
+}

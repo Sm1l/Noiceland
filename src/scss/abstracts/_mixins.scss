@@ -1,0 +1,9 @@
+@mixin font($ff, $fw, $fz, $color) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: 120%;
+  letter-spacing: 1px;
+  color: $color;
+  text-transform: uppercase;
+}
