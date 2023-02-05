@@ -1,7 +1,6 @@
 {
   "name": "noiceland",
   "version": "1.0.0",
-  "description": "",
   "source": "src/index.html",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.5",
@@ -263,6 +262,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf dist && parcel",
     "build": "rm -rf dist && parcel build --public-url='/NoiseLand' --dist-dir=docs"
+
   },
   "keywords": [],
   "author": "",
@@ -270,5 +270,17 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
     "parcel": "2.8.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sm1l/Noiceland.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sm1l/Noiceland/issues"
+  },
+  "homepage": "https://github.com/Sm1l/Noiceland#readme",
+  "description": ""
 }
