@@ -1,7 +1,7 @@
 {
   "name": "noiceland",
   "version": "1.0.0",
-  "source": "src/index.html",
+  "source": "index.html",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.5",
     "acorn": "^8.8.1",
